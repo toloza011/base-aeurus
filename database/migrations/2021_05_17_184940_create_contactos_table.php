@@ -14,15 +14,16 @@ class CreateContactosTable extends Migration
     public function up()
     {
         Schema::create('contactos', function (Blueprint $table) {
+            //cambiar prefijo de contact a con
             $table->id();
-            $table->string('contac_nombre');
-            $table->unsignedBigInteger('contac_id_asunto');
-            $table->string('contac_email',200);
-            $table->integer('contac_telefono');
-            $table->text('contac_mensaje');
-            $table->string('contac_path_documento');
-            $table->dateTime('contac_fecha');
-            $table->foreignId('contac_id_comuna')->nullable()->references('id')->on('comunas')->ondelete('SET NULL');
+            $table->string('con_nombre');
+            $table->unsignedBigInteger('con_id_asunto');
+            $table->string('con_email',200);
+            $table->string('con_telefono'); //de integer a ->string
+            $table->text('con_mensaje');
+            $table->string('con_path_documento');
+            $table->dateTime('con_fecha');
+            $table->foreignId('con_id_comuna')->nullable()->references('id')->on('comunas')->ondelete('SET NULL');
             $table->timestamps();
         });
     }

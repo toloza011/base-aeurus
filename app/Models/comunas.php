@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\regiones;
-use App\Models\contactos;
+use App\Models\Regiones;
+use App\Models\Contactos;
 
 class comunas extends Model
 {

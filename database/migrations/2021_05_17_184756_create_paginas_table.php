@@ -17,7 +17,7 @@ class CreatePaginasTable extends Migration
             $table->id();
             $table->string('pag_nombre');
             $table->text('pag_contenido');
-            $table->enum('pag_estado',['activo','inactivo']);
+            $table->enum('pag_estado',['1','0'])->default('1');
             $table->timestamps();
         });
     }

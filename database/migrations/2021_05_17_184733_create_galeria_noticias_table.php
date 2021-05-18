@@ -14,10 +14,10 @@ class CreateGaleriaNoticiasTable extends Migration
     public function up()
     {
         Schema::create('galeria_noticias', function (Blueprint $table) {
+            //le quitamos el campo nombre galeria_noticias
             $table->id();
-            $table->string('gnot_nombre',250);
             $table->string('gnot_path',500);
-            $table->integer('gnot_orden')->unique();
+            $table->integer('gnot_orden'); //le quitamos el ->unique()
             $table->foreignId('gnot_noticias_id')->references('id')->on('noticias')->onDelete('cascade');
             $table->timestamps();
         });

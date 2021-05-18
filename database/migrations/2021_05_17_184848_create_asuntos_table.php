@@ -16,7 +16,7 @@ class CreateAsuntosTable extends Migration
         Schema::create('asuntos', function (Blueprint $table) {
             $table->id();
             $table->string('asun_nombre');
-            $table->enum('asun_estado',['activo','inactivo']);
+            $table->enum('asun_estado',['1','0']); // le cambiamos de inactivo/activo a 0/1.
             $table->timestamps();
         });
     }

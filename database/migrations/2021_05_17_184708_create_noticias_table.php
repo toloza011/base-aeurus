@@ -17,9 +17,9 @@ class CreateNoticiasTable extends Migration
             $table->id();
             $table->string('not_titulo',250);
             $table->text('not_resumen');
-            $table->text('not_contenido');
+            $table->longText('not_contenido');
             $table->string('not_portada');
-            $table->enum('not_estado',['activo','inactivo']);
+            $table->enum('not_estado',['1','0'])->default('1');// le cambiamos de inactivo/activo a 0/1.
             $table->string('not_url');
             $table->timestamps();
         });

@@ -16,9 +16,9 @@ class CreateSlidersTable extends Migration
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->string('sli_nombre',250);
-            $table->integer('sli_orden')->unique();
+            $table->integer('sli_orden'); //le quitamos el ->unique()
             $table->string('sli_path',500);
-            $table->enum('sli_estado',['activo','inactivo'])->default('activo');
+            $table->enum('sli_estado',['1','0'])->default('1'); //le cambiamos de inactivo/activo a 0/1.
             $table->timestamps();
         });
     }

@@ -50,20 +50,20 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%;
-        width: 100%;
+        height: 90%;
+        width: 90%;
     }
 
     .imagenAeurus{
-        height: 20%;
-        width: 100%;
+        height: 15%;
+        width: 70%;
     }
 
 </style>
 
 <body>
     <div class="container" id="container">
-        <img src="img/aeurus.png" class="imagenAeurus" alt="">
+        <img src="img/aeurus.png" class="imagenAeurus mt-4" alt="">
         <form>
             <div class="form-group">
                 <label for="email">Email</label>
@@ -72,10 +72,14 @@
 
             <div class="form-group">
                 <label for="password">Contraseña</label>
-                <input type="password" class="form-control" name="pass" placeholder="Password">
+                <input type="password" class="form-control" name="pass" placeholder="Contraseña">
             </div>
 
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <button type="submit" class="btn btn-secondary">Entrar</button>
+            <br>
+            <div>
+                <a href="" class="float-right" style="color: #6c757d;">¿Olvidaste tu contraseña?</a>
+            </div>
         </form>
     </div>
 </body>

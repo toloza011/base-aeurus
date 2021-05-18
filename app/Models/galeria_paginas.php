@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\pagina;
+use App\Models\Pagina;
 
 class galeria_paginas extends Model
 {

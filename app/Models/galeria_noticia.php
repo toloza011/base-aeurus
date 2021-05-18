@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\noticia;
+use App\Models\Noticia;
 
 class galeria_noticia extends Model
 {

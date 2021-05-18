@@ -17,7 +17,7 @@ class CreateDocumentosTable extends Migration
             $table->id();
             $table->string('doc_nombre',250);
             $table->string('doc_path',500);
-            $table->string('doc_formato',20);
+            $table->string('doc_formato',5);
             $table->timestamps();
         });
     }
