@@ -16,8 +16,8 @@ class CreateNoticiasTable extends Migration
         Schema::create('noticias', function (Blueprint $table) {
             $table->id();
             $table->string('not_titulo',250);
-            $table->text('resumen');
-            $table->text('contenido');
+            $table->text('not_resumen');
+            $table->text('not_contenido');
             $table->string('not_portada');
             $table->enum('not_estado',['activo','inactivo']);
             $table->string('not_url');
